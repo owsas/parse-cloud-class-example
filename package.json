@@ -34,6 +34,6 @@
     "express": "^4.16.3",
     "parse": "^2.1.0",
     "parse-server": "^3.0.0",
-    "parse-server-addon-cloud-class": "^1.0.6"
+    "parse-server-addon-cloud-class": "^1.0.7"
   }
 }
