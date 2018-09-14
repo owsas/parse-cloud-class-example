@@ -1,10 +1,14 @@
 const { ParseCloudClass } = require('parse-server-addon-cloud-class');
 
 class Score extends ParseCloudClass {
-  requiredKeys = ['user', 'points']; // All scores must have an user and some points set
+  constructor(params) {
+    super(params);
 
-  minimumValues = {
-    points: 0,
+    this.requiredKeys = ['user', 'points']; // All scores must have an user and some points set
+
+    this.minimumValues = {
+      points: 0,
+    }
   }
 }
 

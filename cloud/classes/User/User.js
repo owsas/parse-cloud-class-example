@@ -5,19 +5,23 @@ const AnalyticsAddon = require('../../addons/AnalyticsAddon');
 const analyticsAddon = new AnalyticsAddon();
 
 class User extends ParseCloudClass {
-  addons = [ analyticsAddon ]; // Use the analytics addon
+  constructor(params) {
+    super(params);
 
-  defaultValues = {
-    // By default, all users receive emails
-    receiveEmails: true,
-  }
+    this.addons = [ analyticsAddon ]; // Use the analytics addon
 
-  // For instance, in this application we could
-  // have an internal calculation of ratings for the users
-  immutableKeys = ['rating'];
+    this.defaultValues = {
+      // By default, all users receive emails
+      receiveEmails: true,
+    }
 
-  minimumValues = {
-    rating: 0, // The rating cannot go below 0
+    // For instance, in this application we could
+    // have an internal calculation of ratings for the users
+    this.immutableKeys = ['rating'];
+
+    this.minimumValues = {
+      rating: 0, // The rating cannot go below 0
+    }
   }
   
   async processBeforeSave(req) {
