@@ -18,10 +18,6 @@ class User extends ParseCloudClass {
     // For instance, in this application we could
     // have an internal calculation of ratings for the users
     this.immutableKeys = ['rating'];
-
-    this.minimumValues = {
-      rating: 0, // The rating cannot go below 0
-    }
   }
   
   async processBeforeSave(req) {
