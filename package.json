@@ -4,6 +4,7 @@
   "description": "A Parse Server example using parse-cloud-class (parse-server-addon-cloud-class)",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,8 +32,8 @@
   "dependencies": {
     "@owsas/parse-service": "^1.0.2",
     "express": "^4.16.3",
-    "parse": "^2.1.0",
-    "parse-server": "^3.0.0",
+    "parse": "^1.11.1",
+    "parse-server": "^2.8.4",
     "parse-server-addon-cloud-class": "^1.0.4"
   }
 }
