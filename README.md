@@ -1,6 +1,6 @@
 # parse-cloud-class-example
 
-This is a repository that contains an example on how to use `parse-server-addon-cloud-class` for your [Parse Server](https://github.com/parse-community/parse-server), defining some behaviours for the `_User` class, and for an example `Score` class.
+This is a repository that contains an example on how to use [`parse-server-addon-cloud-class`](https://github.com/owsas/parse-cloud-class) for your [Parse Server](https://github.com/parse-community/parse-server), defining some behaviours for the `_User` class, and for an example `Score` class.
 
 It also contains an example addon (`AnalyticsAddon`), which saves an analytic each time a new object is created. This addon is then plugged to the classes mentioned before. 
 
